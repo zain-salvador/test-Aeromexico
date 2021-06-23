@@ -4,7 +4,9 @@ import { BookOutlined } from '@ant-design/icons';
 import './card.css'
 
 
-const Card = ({name,alive,hogwartsStudent,dateOfBirth,gender,eyeColour,hairColour,image,house})=>{
+const Card = ({name,alive,hogwartsStudent,
+    dateOfBirth,gender,eyeColour,
+    hairColour,image,house,handleFavorite})=>{
 
     return(
         <Row className="bx-card">
@@ -40,7 +42,7 @@ const Card = ({name,alive,hogwartsStudent,dateOfBirth,gender,eyeColour,hairColou
                                
                             </Col>
                             <Col  md={6}>
-                                <BookOutlined className="bx-icon"/>
+                                <BookOutlined className="bx-icon" onClick={()=>handleFavorite(image,name)}/>
                             </Col>
                         </Row>
                         <Row>

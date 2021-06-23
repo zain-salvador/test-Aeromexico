@@ -1,16 +1,17 @@
 import React from 'react'
 import { Col, Row } from 'antd';
-import { BookOutlined,UserAddOutlined } from '@ant-design/icons';
+import Submenu from '../Submenu'
+import { UserAddOutlined } from '@ant-design/icons';
 import './menu.css'
 
 const Menu = ()=>{
     return(
         <div className="bx-menu">
-            <Row>
+            <Row className="bx-content-menu">
                 <Col md={12}>
                     <div className="bx-label bx-border">
-                        FAVORITOS 
-                        <BookOutlined/>
+                        <Submenu />
+                        
                     </div> 
                 </Col>
                 <Col md={12}>

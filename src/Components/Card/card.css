@@ -60,7 +60,11 @@
     height: 22px;
 
     background: #FFFFFF;
+    color: rgb(97, 92, 92);
    
+}
+.bx-icon:hover{
+    color: black;
 }
 
 .bx-alive{
