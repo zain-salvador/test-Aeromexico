@@ -1,10 +1,10 @@
 import 'antd/dist/antd.css'
-import Card from './Components/Card'
+import Menu from './Components/Menu'
 
 function App() {
   return (
     <div className="App">
-     <Card></Card>
+        <Menu></Menu>
     </div>
   );
 }

@@ -1,8 +1,9 @@
 import React from 'react'
-
 import { Col, Row } from 'antd';
 import { BookOutlined } from '@ant-design/icons';
 import './card.css'
+
+
 const Card = ()=>{
 
     return(

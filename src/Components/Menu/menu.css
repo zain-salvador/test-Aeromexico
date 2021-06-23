@@ -1,0 +1,38 @@
+.bx-menu{
+    padding: 0;
+    margin: 0;
+    width: 281px;
+    height: 36px;
+
+    background: #6B63B5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.bx-label{
+
+   
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    /* or 179% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.bx-icon{
+    margin-left: 10%;
+}
+
+.bx-border{
+    border-right: 1px solid black;
+}
+
+.bx-label:hover{
+    cursor: pointer;
+}

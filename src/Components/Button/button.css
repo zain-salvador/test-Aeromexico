@@ -1,0 +1,30 @@
+.bx-button{
+    position: relative;
+    width: 288px;
+    height: 67px;
+
+    border: 4px solid #6B63B5;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 25px;
+    color: #FFFFFF;
+    border-radius: 4px;
+    text-align: center;
+    letter-spacing: 0.2em;
+
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+
+}
+
+.bx-button:hover{
+    border: 4px solid #6B63B5;
+    background: rgba(107, 99, 181, 0.6);
+}
+
+.bx-button:active{
+    background: #6B63B5;
+}
