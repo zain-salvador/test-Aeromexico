@@ -1,0 +1,161 @@
+.bx-card{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    
+    /* White */
+    
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 16px;
+
+    width: 515px;
+    height: 265px;
+}
+
+.bx-profile{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #FF0000 0%, #FED482 100%);
+    border-radius: 16px 0px 0px 16px;
+}
+
+.bx-image{
+    position: absolute;
+    width: 165px;
+    height: 165px;
+    left: 15px;
+    top: 50px;
+    border-radius: 50%;
+}
+
+.bx-icon{
+    position: absolute;
+    left: 60%;
+    right: 4.27%;
+    top: 15%;
+    bottom: 83.4%;
+
+    width: 20px;
+    height: 22px;
+
+    background: #FFFFFF;
+   
+}
+
+.bx-alive{
+    position: static;
+    width: 94px;
+    height: 19px;
+    right: 0px;
+    top: 0px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+    text-align: right;
+
+    color: #999999;
+    margin: 0px 15px;
+}
+
+.bx-name{
+    position: absolute;
+    width: 226px;
+    height: 46px;
+    left: 15px;
+    top: 50px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 46px;
+
+    color: #081F32;
+}
+
+.bx-description{
+    position: absolute;
+    width: 184px;
+    height: 112px;
+    left: 15px;
+    top: 131px;
+
+    /* Open Sans / 18 sp • Body 1 */
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 27px;
+    /* or 193% */
+
+
+    /* Body text */
+
+    color: #374A59;
+}
+
+label{
+    display: block;
+}
+@media screen and (max-width: 767px) {
+    .bx-card{
+        width: 140px;
+        height: 181px;
+    }
+
+    .bx-profile{
+        
+        height: 100px;
+        border-radius: 5px 5px 0px 0px;
+        
+    }
+
+    .bx-image{
+        position: absolute;
+        width: 70.8px;
+        height: 93.31px;
+        left: 23.72%;
+        right: 25.71%;
+        top: 2.75%;
+        bottom: 44.04%;
+    }
+
+    .bx-description{
+        display: none;
+    }
+
+    .bx-name{
+        left: -33%;
+        right: 0%;
+        top: -50%;
+        bottom: 26.52%;
+    
+        font-size: 18px;
+        line-height: 46px;
+        text-align: center;
+    }
+
+    .bx-alive{
+        font-size: 10px;
+    }
+
+    .bx-main-title{
+        margin-top: 5px;
+    }
+
+    .bx-icon{
+    
+        top: 65%;
+        margin-left: -25px;
+       
+    }
+}
