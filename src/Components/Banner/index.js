@@ -1,24 +1,24 @@
 import React from 'react'
 import { Col, Row } from 'antd';
 import Button from '../Button'
-
+import './Banner.css'
 const Banner = () =>{
 
     return (
-        <div>
-            <div>
-                <span>Harry potter</span>
+        <div className="bx-container">
+            <div className="bx-harry-label">
+                Harry Potter
             </div>
-            <div>
-                <span>Selecciona tu filtro</span>
+            <div  className="bx-text-align">
+                Selecciona tu filtro
             </div>
             <div>
                 <Row>
-                    <Col md={12}>
-                    
+                    <Col md={12} className="bx-button-align">
+                        <Button name="ESTUDIANTE"/>
                     </Col>
-                    <Col md={12}>
-
+                    <Col md={12} className="bx-button-align">
+                        <Button name="STAFF"/>
                     </Col>
                 </Row>
             </div>

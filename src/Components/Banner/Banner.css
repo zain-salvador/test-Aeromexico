@@ -1,0 +1,30 @@
+.bx-harry-label{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 25px;
+    color: #FFFFFF;
+    border-radius: 4px;
+    text-align: center;
+    letter-spacing: 0.2em;
+}
+
+.bx-text-align{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    border-radius: 4px;
+    text-align: center;
+    letter-spacing: 0.5em;
+
+    margin-top: 20px;
+}
+
+.bx-button-align{
+    margin-top: 50px;
+    text-align: center;
+}
