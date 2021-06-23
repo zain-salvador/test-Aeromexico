@@ -1,5 +1,7 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import Card from '../../Components/Card'
+import {CharacterContext} from '../../Context/Characters'
+
 import { Row, Col } from "antd";
 import './CardList.css'
 const CardList = () =>{
@@ -94,10 +96,11 @@ const CardList = () =>{
             "image":"http://hp-api.herokuapp.com/images/draco.jpg"
          },
     ]
+    const {charactersList} = useContext(CharacterContext)
     return(
         <Row>
             {
-                list.map((item,i)=>(
+                charactersList.map((item,i)=>(
                     <Col key = {i+"row"}  xs={12} sm={12} md={12}>
                         <Card className="bx-align-content" key={i} {...item}></Card>
                     </Col>

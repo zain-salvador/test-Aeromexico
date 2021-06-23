@@ -2,6 +2,7 @@ import React from 'react'
 import { Col, Row } from 'antd';
 import Button from '../../Components/Button'
 import CardList from '../CardList'
+import CharacterProvider from '../../Context/Characters'
 import './Banner.css'
 const Banner = () =>{
 
@@ -24,7 +25,10 @@ const Banner = () =>{
                 </Row>
             </div>
             <div>
-                <CardList />
+                <CharacterProvider>
+                    <CardList />
+                </CharacterProvider>
+                
             </div>
         </div>
     )
