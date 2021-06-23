@@ -1,10 +1,12 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { Col, Row } from 'antd';
 import Button from '../../Components/Button'
-import CardList from '../CardList'
-import CharacterProvider from '../../Context/Characters'
+import {CharacterContext} from '../../Context/Characters'
+
 import './Banner.css'
 const Banner = () =>{
+
+    const {studentFilter, staffFilter} = useContext(CharacterContext)
 
     return (
         <div className="bx-container">
@@ -17,18 +19,12 @@ const Banner = () =>{
             <div>
                 <Row>
                     <Col xs={12} sm={12} md={12} className="bx-button-align">
-                        <Button name="ESTUDIANTE"/>
+                        <Button name="ESTUDIANTE" handleFilter={studentFilter}/>
                     </Col>
                     <Col xs={12} sm={12} md={12} className="bx-button-align">
-                        <Button name="STAFF"/>
+                        <Button name="STAFF"  handleFilter={staffFilter}/>
                     </Col>
                 </Row>
-            </div>
-            <div>
-                <CharacterProvider>
-                    <CardList />
-                </CharacterProvider>
-                
             </div>
         </div>
     )

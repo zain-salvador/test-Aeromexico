@@ -1,12 +1,10 @@
 import 'antd/dist/antd.css'
-import Menu from './Components/Menu'
-import Banner from './views/Banner'
+import Main from './views/Main'
 
 function App() {
   return (
     <div className="App">
-        <Menu></Menu>
-        <Banner />
+        <Main />
     </div>
   );
 }

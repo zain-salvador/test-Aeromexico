@@ -1,8 +1,9 @@
 import React from 'react'
 import './button.css'
-const Button = ({name}) =>{
+const Button = ({name, handleFilter}) =>{
     return(
-        <button className="bx-button">
+        <button onClick={()=>handleFilter()}
+            className="bx-button">
            {name}
         </button>
     )
