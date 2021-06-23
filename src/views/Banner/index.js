@@ -1,6 +1,7 @@
 import React from 'react'
 import { Col, Row } from 'antd';
-import Button from '../Button'
+import Button from '../../Components/Button'
+import CardList from '../CardList'
 import './Banner.css'
 const Banner = () =>{
 
@@ -14,13 +15,16 @@ const Banner = () =>{
             </div>
             <div>
                 <Row>
-                    <Col md={12} className="bx-button-align">
+                    <Col xs={12} sm={12} md={12} className="bx-button-align">
                         <Button name="ESTUDIANTE"/>
                     </Col>
-                    <Col md={12} className="bx-button-align">
+                    <Col xs={12} sm={12} md={12} className="bx-button-align">
                         <Button name="STAFF"/>
                     </Col>
                 </Row>
+            </div>
+            <div>
+                <CardList />
             </div>
         </div>
     )

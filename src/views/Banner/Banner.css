@@ -28,3 +28,19 @@
     margin-top: 50px;
     text-align: center;
 }
+
+@media screen and (max-width: 767px) {
+    .bx-harry-label{
+        font-size: 28px;
+        line-height: 25px; 
+        
+    }
+
+    .bx-text-align{
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.2em;
+    }
+
+}

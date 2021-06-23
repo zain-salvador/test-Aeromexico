@@ -1,6 +1,6 @@
 import 'antd/dist/antd.css'
 import Menu from './Components/Menu'
-import Banner from './Components/Banner'
+import Banner from './views/Banner'
 
 function App() {
   return (

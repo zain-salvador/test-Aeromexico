@@ -4,13 +4,17 @@ import { BookOutlined } from '@ant-design/icons';
 import './card.css'
 
 
-const Card = ()=>{
+const Card = ({name,alive,hogwartsStudent,dateOfBirth,gender,eyeColour,hairColour,image,house})=>{
 
     return(
         <Row className="bx-card">
             <Col xs={24} sm={24} md={9} >
-                <div className="bx-profile">
-                    <img className="bx-image" src="http://hp-api.herokuapp.com/images/harry.jpg" alt="User name"/>
+                <div className={
+                    (house === "Gryffindor"? "bx-gryffindor": 
+                    house === "Slytherin"? "bx-slytherin": 
+                    house === "Hufflepuff"? "bx-hufflepuff": "bx-ravenclaw") + " bx-profile" }>
+                        
+                    <img className="bx-image" src={image} alt="User name"/>
                 </div>
             </Col>
             <Col xs={24} sm={24} md={15}>
@@ -22,12 +26,13 @@ const Card = ()=>{
                                     <Row>
                                         <Col md={6}>
                                             <span className="bx-alive">
-                                                VIVO
+                                               { alive? "VIVO":"FINADO"}
                                             </span> 
                                         </Col>
                                         <Col md={18}>
                                             <span className="bx-alive">
-                                                /ESTUDIANTE
+                                                {hogwartsStudent? " /ESTUDIANTE":"/STAFF"}
+                                               
                                             </span> 
                                         </Col>
                                     </Row>
@@ -40,15 +45,15 @@ const Card = ()=>{
                         </Row>
                         <Row>
                             <span className="bx-name">
-                                Harry Potter
+                                {name}
                             </span> 
                         </Row>
                         <Row>
                             <div className="bx-description">
-                                <label>Cumpleaños: 31-071980</label>
-                                <label>Género: Male</label>
-                                <label>Color de ojos: Green</label>
-                                <label>Color de pelo: Black</label>
+                                <label>Cumpleaños: {dateOfBirth}</label>
+                                <label>Género: {gender}</label>
+                                <label>Color de ojos: {eyeColour}</label>
+                                <label>Color de pelo: {hairColour}</label>
                             </div>
                         </Row>
                     </Col>

@@ -28,3 +28,16 @@
 .bx-button:active{
     background: #6B63B5;
 }
+
+@media screen and (max-width: 767px) {
+    .bx-button{
+        
+        width: 140px;
+        height: 42.93px;
+
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+}
