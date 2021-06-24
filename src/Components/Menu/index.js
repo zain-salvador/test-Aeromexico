@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Row } from 'antd';
 import Submenu from '../Submenu'
-import { UserAddOutlined } from '@ant-design/icons';
+import Form from '../Form'
 import './menu.css'
 
 const Menu = ()=>{
@@ -11,13 +11,11 @@ const Menu = ()=>{
                 <Col md={12}>
                     <div className="bx-label bx-border">
                         <Submenu />
-                        
                     </div> 
                 </Col>
                 <Col md={12}>
                     <div className="bx-label">
-                        AGREGAR
-                        <UserAddOutlined/>
+                        <Form />
                     </div>
                 </Col>
             </Row> 

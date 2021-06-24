@@ -27,6 +27,9 @@
 .bx-button-align{
     margin-top: 50px;
     text-align: center;
+
+    position: sticky;
+    top: 30px;
 }
 
 @media screen and (max-width: 767px) {

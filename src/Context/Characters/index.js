@@ -27,9 +27,15 @@ const CharacterProvider = ({ children}) =>{
         setFavorites(newListFav)
     }
 
+    const addNewCharacter = (data) =>{
+        setCharacterList([...charactersList,data])
+    }
+
 
     return(
-        <CharacterContext.Provider value={{charactersList,studentFilter,staffFilter,favorites,addFavorite,deleteFav}}>
+        <CharacterContext.Provider 
+                    value={{charactersList,studentFilter,staffFilter,addNewCharacter,
+                    favorites,addFavorite,deleteFav}}>
             {children}
         </CharacterContext.Provider>
     )

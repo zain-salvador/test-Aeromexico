@@ -1,8 +1,37 @@
 .bx-container-banner{
-    position: sticky;
+    position: relative;
+   
 }
 
 .bx-container-card{
     margin-top: 30px;
     top: 0;
+}
+
+.bx-main-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.bx-menu{
+    position: sticky;
+    top: 5px;
+    z-index: 2;
+  
+    
+    /*position: sticky;
+    bottom: -110px;
+    z-index: 2;*/
+}
+
+@media screen and (max-width: 767px) {
+    .bx-main-container{
+        flex-direction: column-reverse;
+    }
+
+    .bx-menu{
+        position: sticky;
+        bottom: -100px;
+        z-index: 2;
+    }
 }

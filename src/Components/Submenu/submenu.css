@@ -79,3 +79,26 @@
     margin-left: 90%;
     color: white;
 }
+
+@media screen and (max-width: 767px) {
+
+    .dropbtn {
+        background-color: #6B63B5;;
+        color: white;
+        font-size: 14px;
+        height: 28px;
+        width: 10;
+        border: none;
+        cursor: pointer;
+        padding-right: 35px;
+       
+    }
+
+    .bx-icon-menu{
+        display: none;
+    }
+
+    .bx-content{
+        bottom: 28px;
+    }
+}

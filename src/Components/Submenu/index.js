@@ -15,7 +15,7 @@ const Submenu = ()=>{
                     <img className="bx-image-menu" src={image} alt="User name"/>
                 </Col>
                 <Col>
-                    <div className="bx-font-name">
+                    <div className="bx-font-name"> 
                        {name}
                     </div>
                 </Col>
@@ -28,7 +28,7 @@ const Submenu = ()=>{
 
     return (
         <div className="bx-submenu">
-            <button className="dropbtn">FAVORITOS <BookOutlined/></button>
+            <button className="dropbtn"><span>FAVORITOS <BookOutlined className="bx-icon-menu"/></span></button>
             <div className="bx-content">
                 {
                     favorites.map((item,i)=>(
