@@ -16,12 +16,13 @@ const CharacterProvider = ({ children}) =>{
     const staffFilter = () => setCharacterList(staff)
 
     const addFavorite = (image,name)=>{
-        const added = favorites.filter(item=>item.name == name)
+        const added = favorites.filter(item=>item.name === name)
         console.log(added)
         if(favorites.length<5){
-            if(added.length == 0){
+            if(added.length === 0){
                 const newFav = {image: image, name: name}
                 setFavorites([...favorites, newFav])
+                message.info('Character added')
             }else
                 message.warning('The character exists in your favorites')
         }else
