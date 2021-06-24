@@ -1,6 +1,5 @@
 import React, { useState, useContext } from 'react'
-import { Modal,Input,Radio } from 'antd'
-import { Col, Row } from 'antd';
+import { Modal,Input,Radio,message,Col, Row } from 'antd'
 import { UserAddOutlined } from '@ant-design/icons';
 import {CharacterContext} from '../../Context/Characters'
 import './form.css'
@@ -45,7 +44,8 @@ const Form = () => {
 
         handleCancel()
       }else
-          alert("All fild are required")
+        message.warning('All field are required');
+          
   }
 
   return (
